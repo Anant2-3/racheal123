@@ -1,0 +1,164 @@
+/* 🎀 Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Poppins&display=swap');
+
+/* 🌈 Global Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://i.ibb.co/5vdrwK3/birthday-balloons.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* ✨ Typing Effect */
+.typing {
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #ff69b4;
+  width: 0;
+  animation: typing 4s steps(30) forwards, blink 0.75s step-end infinite;
+  color: #ff1493;
+  text-shadow: 0 0 10px #ff69b4;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* ❤️ Heartbeat Animation */
+.heartbeat {
+  animation: heartbeat 1.2s infinite;
+  display: inline-block;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+.heartbeat {
+  animation: heartbeat 1.2s infinite;
+  display: inline-block;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+
+/* 🎁 Surprise Button */
+.surprise-btn {
+  background-color: #ff69b4;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #ff1493;
+  font-family: 'Poppins', sans-serif;
+}
+
+.surprise-btn:hover {
+  background-color: #ff1493;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ff69b4;
+}
+
+/* 💖 Glowing Headings */
+h2, h3 {
+  color: #d63384;
+  text-shadow: 0 0 10px #ffc0cb;
+  font-family: 'Great Vibes', cursive;
+}
+
+/* 📱 Responsive Text */
+@media screen and (max-width: 600px) {
+  .typing {
+    font-size: 24px;
+  }
+
+  .surprise-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* 💗 Floating Emoji Animation */
+.floating-emoji {
+  position: absolute;
+  font-size: 24px;
+  animation: float 8s infinite;
+  opacity: 0.7;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-80px) translateX(30px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.8;
+  }
+}
+/* 📸 Positioned Images */
+
+#img1.heartbeat {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 140px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 12px #ff69b4;
+  z-index: 10;
+  animation: heartbeat 1.2s infinite;
+}
+
+#img2.heartbeat {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  width: 140px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 12px #ff69b4;
+  z-index: 10;
+  animation: heartbeat 1.2s infinite;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
